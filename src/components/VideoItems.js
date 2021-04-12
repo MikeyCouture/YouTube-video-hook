@@ -2,8 +2,6 @@ import "./VideoItem.css";
 import React from "react";
 
 const VideoItems = ({ video, onVideoSelect }) => {
-  //this.props.video <--avail here
-
   return (
     <div
       onClick={() => {
