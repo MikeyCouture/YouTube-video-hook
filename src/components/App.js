@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 import useVideos from "../hooks/useVideos";
+import Banner from "./Banner";
 import Footer from "./Footer";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
 
   return (
     <div className="main-container">
+      <Banner />
       <div className="ui container">
         <SearchBar onFormSubmit={search} />
         <div className="ui grid">

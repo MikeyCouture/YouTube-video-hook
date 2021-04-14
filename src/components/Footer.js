@@ -3,10 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <div>
+      <div className="footer-container-inner">
         <p>
-          <a target="_blank" href="https://www.udemy.com/user/sgslo/">
-            Proudly developed alongside Stephen Grider's Udemy Course
+          <a href="https://www.udemy.com/user/sgslo/">
+            Proudly developed my Mikey Couture with Stephen Grider's Udemy
+            Course
           </a>
         </p>
       </div>
