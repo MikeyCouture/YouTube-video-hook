@@ -4,6 +4,7 @@ import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 import useVideos from "../hooks/useVideos";
 import Banner from "./Banner";
+import SliderButtons from "./SliderButtons";
 import Footer from "./Footer";
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
                 videos={videos}
               />
             </div>
+            <SliderButtons />
           </div>
         </div>
       </div>
