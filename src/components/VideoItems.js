@@ -7,7 +7,7 @@ const VideoItems = ({ video, onVideoSelect }) => {
       onClick={() => {
         onVideoSelect(video);
       }}
-      className="video-item item"
+      className="vid-item"
     >
       <img
         alt={video.snippet.title}

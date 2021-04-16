@@ -47,3 +47,28 @@
   font-family: "Kiwi Maru", serif;
   font-size: 10px;
 }
+
+.vid-item {
+  transform: translateX(-30%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+  flex-direction: column;
+}
+
+.vid-list {
+  max-width: 100rem;
+  height: 30rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.vid-section {
+  width: 100%;
+}

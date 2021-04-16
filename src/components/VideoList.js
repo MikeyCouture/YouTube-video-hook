@@ -12,7 +12,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
     );
   });
   // props.videos <--available here now
-  return <div className="ui relaxed divided list">{renderedList}</div>;
+  return <div className="vid-list">{renderedList}</div>;
 };
 
 export default VideoList;
