@@ -1,13 +1,16 @@
 import "./VideoItem.css";
 import React from "react";
 
-const VideoItems = ({ video, onVideoSelect }) => {
+const VideoItems = ({ video, onVideoSelect, index }) => {
+  let curSlide = 0;
+
   return (
     <div
       onClick={() => {
         onVideoSelect(video);
       }}
       className="vid-item"
+      style={{ transform: `translateX(${10 * (index - curSlide)}%)` }}
     >
       <img
         alt={video.snippet.title}
