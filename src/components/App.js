@@ -10,6 +10,11 @@ import Footer from "./Footer";
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [videos, search] = useVideos("snowboarding");
+  const [currSlide, setCurrSlide] = useState(0);
+
+  const increment = () => {
+    setCurrSlide(currSlide + 1);
+  };
 
   useEffect(() => {
     setSelectedVideo(videos[0]);
@@ -29,9 +34,10 @@ const App = () => {
               <VideoList
                 onVideoSelect={video => setSelectedVideo(video)}
                 videos={videos}
+                currSlide={currSlide}
               />
             </div>
-            <SliderButtons />
+            <SliderButtons onNextChange={increment} currSlide={currSlide} />
           </div>
         </div>
       </div>

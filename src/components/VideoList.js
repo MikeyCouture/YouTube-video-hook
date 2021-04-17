@@ -1,7 +1,7 @@
 import React from "react";
 import VideoItem from "./VideoItems";
 
-const VideoList = ({ videos, onVideoSelect }) => {
+const VideoList = ({ videos, onVideoSelect, currSlide }) => {
   const renderedList = videos.map((video, i) => {
     return (
       <VideoItem
@@ -9,6 +9,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
         onVideoSelect={onVideoSelect}
         video={video}
         index={i}
+        currSlide={currSlide}
       />
     );
   });
