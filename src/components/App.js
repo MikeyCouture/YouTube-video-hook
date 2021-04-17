@@ -12,8 +12,14 @@ const App = () => {
   const [videos, search] = useVideos("snowboarding");
   const [currSlide, setCurrSlide] = useState(0);
 
+  const slides = document.querySelectorAll(".vid-item");
+  const maxSlides = slides.length;
+
   const increment = () => {
-    setCurrSlide(currSlide + 1);
+    currSlide === maxSlides - 1 ? setCurrSlide(0) : setCurrSlide(currSlide + 1);
+  };
+  const decrement = () => {
+    currSlide === 0 ? setCurrSlide(maxSlides - 1) : setCurrSlide(currSlide - 1);
   };
 
   useEffect(() => {
@@ -37,7 +43,7 @@ const App = () => {
                 currSlide={currSlide}
               />
             </div>
-            <SliderButtons onNextChange={increment} currSlide={currSlide} />
+            <SliderButtons onNextChange={increment} onPrevChange={decrement} />
           </div>
         </div>
       </div>

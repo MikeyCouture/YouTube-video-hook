@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-const SliderButtons = ({ onNextChange, currSlide }) => {
+const SliderButtons = ({ onNextChange, onPrevChange }) => {
   return (
     <div className="button-container">
-      <button className="button button-prev">PREV</button>
+      <button onClick={onPrevChange} className="button button-prev">
+        PREV
+      </button>
       <button onClick={onNextChange} className="button button-next">
         NEXT
       </button>
-      <div>Count: {currSlide}</div>
     </div>
   );
 };
