@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="footer-container-inner">
         <p>
           <a href="https://www.udemy.com/user/sgslo/">
-            Proudly developed my Mikey Couture with Stephen Grider's Udemy
-            Course
+            Proudly developed by Mikey Couture (apart of Stephen Grider's Udemy
+            Course - excluding custom refractors).
           </a>
         </p>
       </div>
